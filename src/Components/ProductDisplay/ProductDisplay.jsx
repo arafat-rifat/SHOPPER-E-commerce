@@ -7,7 +7,7 @@ import { ShopContext } from "../../Context/ShopContext";
 const ProductDisplay = (props) => {
    
   const {product} = props;
-  const {addToCart} = useContext(ShopContext);
+  const {addCart} = useContext(ShopContext);
 
   return (
   <div className="productdisplay">
@@ -57,7 +57,7 @@ Welcome to our vibrant world of fashion! Discover our latest collection where st
           <div>XXL</div>
         </div>
       </div>
-      <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+      <button onClick={()=>{addCart(product.id)}}>ADD TO CART</button>
       <p className="productdisplay-right-category">
         <span>Category :</span>
         Women , T-Shirt , Crop-Top
